@@ -7,7 +7,7 @@ pipeline {
              //  git 'https://github.com/dbalamurugan/pipeline_scm.git'
                echo 'pipeline doing now'
               5.times {
-   println "Groovy Rules!"
+   println "Groovy Rules!";
 }
          }
       }
