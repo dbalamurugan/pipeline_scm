@@ -14,7 +14,7 @@ pipeline {
                   echo "flag: ${params.userFlag}"
                   echo "string input values is ${build_version}"
                   echo "choice value is  ${params.reg}" 
-                  n = ${params.build_version}
+                  n = ${params.reg}
                 for (index in 1 .. 5) {
                     
                         echo "looping"
