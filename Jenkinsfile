@@ -8,8 +8,8 @@ pipeline {
     stages {
         stage("foo") {
             steps { 
-                echo "flag: ${params.userFlag}"
-            }
+                echo "flag: ${params.userFlag}" 
+            }  
         }
     }
 }
