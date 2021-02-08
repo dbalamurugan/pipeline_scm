@@ -14,7 +14,8 @@ pipeline {
                   echo "flag: ${params.userFlag}"
                   echo "string input values is ${build_version}"
                   echo "choice value is  ${params.reg}" 
-                build_version.times{
+                  def n = ${params.build_version}
+                n.times{
                     echo "looping"
                 }
 
