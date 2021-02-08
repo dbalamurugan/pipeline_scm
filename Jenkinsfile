@@ -11,7 +11,7 @@ pipeline {
                             choice(
                                 choices: ['ONE', 'TWO'], 
                                 name: 'PARAMETER_01'
-                            )
+                            ),
 
              }
          
