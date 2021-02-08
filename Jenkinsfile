@@ -14,6 +14,10 @@ pipeline {
                   echo "flag: ${params.userFlag}"
                   echo "string input values is ${build_version}"
                   echo "choice value is  ${params.reg}" 
+                3.times{
+                    echo "looping"
+                }
+
             }  
         }
     }
