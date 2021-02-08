@@ -12,8 +12,9 @@ pipeline {
                                 choices: ['ONE', 'TWO'], 
                                 name: 'PARAMETER_01'
                             ),
-                        )
                         ])
+                        ])
+                ])
 
              }
          
