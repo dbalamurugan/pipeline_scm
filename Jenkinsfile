@@ -9,7 +9,7 @@ pipeline {
                              choice(
                                 choices: ['ONE', 'TWO'], 
                                 name: 'PARAMETER_01'
-                            
+                            echo $PARAMETER_01
                             ),
                             
                             booleanParam(
