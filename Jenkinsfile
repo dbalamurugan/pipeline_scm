@@ -6,8 +6,7 @@ pipeline {
                 script { 
                     properties([
                         parameters([
-                               echo 'choice values'
-                            choice(
+                             choice(
                                 choices: ['ONE', 'TWO'], 
                                 name: 'PARAMETER_01'
                             
