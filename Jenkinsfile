@@ -13,7 +13,7 @@ pipeline {
                                 name: 'PARAMETER_01'
                             ),
                         )
-                )
+                        ])
 
              }
          
