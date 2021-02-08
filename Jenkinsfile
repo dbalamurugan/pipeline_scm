@@ -4,12 +4,17 @@ pipeline {
    stages {
       stage('git stage') {
          steps {
-             //  git 'https://github.com/dbalamurugan/pipeline_scm.git'
-             parameters {
-    run description: 'build detaila', filter: 'ALL', name: 'builld', projectName: '1233'
-}
+             //  g
+             srript {
+                properties([
+                        parameters([
+                            choice(
+                                choices: ['ONE', 'TWO'], 
+                                name: 'PARAMETER_01'
+                            )
 
-             
+             }
+         
          }
       }
    }
