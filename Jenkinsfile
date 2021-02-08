@@ -1,38 +1,15 @@
 pipeline {
     agent any
+
+    parameters {
+        booleanParam(defaultValue: true, description: '', name: 'userFlag')
+    }
+
     stages {
-        stage('Setup parameters') {
+        stage("foo") {
             steps {
-                script { 
-                    properties([
-                        parameters([
-                             choice(
-                                choices: ['ONE', 'TWO'], 
-                                name: 'PARAMETER_01'
-                             ),
-                            
-                            booleanParam(
-                                defaultValue: true, 
-                                description: '', 
-                                name: 'BOOLEAN'
-                            ),
-                            text(
-                                defaultValue: '''
-                                this is a multi-line 
-                                string parameter example
-                                ''', 
-                                 name: 'MULTI-LINE-STRING'
-                            ),
-                            string(
-                                defaultValue: 'scriptcrunch', 
-                                name: 'STRING-PARAMETER', 
-                                trim: true
-                            )
-                        ])
-                    ])
-                }
-                  echo 'parameter values----.'  $PARAMETER_01
+                echo "flag: ${params.userFlag}"
             }
         }
-    }   
+    }
 }
