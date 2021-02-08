@@ -7,7 +7,7 @@ pipeline {
 
     stages {
         stage("foo") {
-            steps {
+            steps { 
                 echo "flag: ${params.userFlag}"
             }
         }
