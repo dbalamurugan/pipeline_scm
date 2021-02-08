@@ -15,8 +15,9 @@ pipeline {
                   echo "string input values is ${build_version}"
                   echo "choice value is  ${params.reg}" 
                   def n = ${params.build_version}
-                n.times{
-                    echo "looping"
+                for (index in 1..5) {
+                    
+                        echo "looping"
                 }
 
             }  
