@@ -12,6 +12,7 @@ pipeline {
                 echo 'ddddddddddddddddddddddddd'
                   echo "flag: ${params.userFlag}"
                   echo "string input values is ${build_version}"
+                  echo "falg value is  ${params.userFlag}"
             }  
         }
     }
