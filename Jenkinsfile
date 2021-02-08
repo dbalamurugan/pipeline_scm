@@ -9,8 +9,9 @@ pipeline {
                             choice(
                                 choices: ['ONE', 'TWO'], 
                                 name: 'PARAMETER_01'
+                                echo 'choice values'  $choice
                             ),
-                            echo 'choice values'  $choice
+                            
                             booleanParam(
                                 defaultValue: true, 
                                 description: '', 
